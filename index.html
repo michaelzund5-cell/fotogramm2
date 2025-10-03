@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogalerie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="impressum.html">
+    <link rel="stylesheet" href="impresum.html">
+  </head>
+
+
+  <body onload="renderGallery()">
+    <div class="top-img">
+<img class="img-top" src="img/logo/Fotogram_Logo.svg" alt="logo">
+</div>
+
+    <header>
+      <h1>Meine Fotogalerie</h1>
+    </header>
+
+    <main id="main-content">
+      <section class="gallery-section">
+        <h2>Galerie</h2>
+        <div id="gallery" class="gallery"></div>
+      </section>
+    </main>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-hidden="true">
+      <button id="closeBtn" class="lightbox-close" aria-label="Schließen">×</button>
+      <button id="prevBtn" class="nav-btn prev" aria-label="Vorheriges Bild">❮</button>
+      <figure id="lightbox-content" class="lightbox-content">
+        <img id="lightbox-img" src="" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button id="nextBtn" class="nav-btn next" aria-label="Nächstes Bild">❯</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Meine Galerie</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+  </body>
+  
+</html>
