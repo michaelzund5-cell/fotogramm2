@@ -17,18 +17,18 @@ body {
 header,
 footer {
   text-align: center;
-  padding: 1rem 0;
+  padding: 30px;
   background-color: #eee;
 }
+
 
 main {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 16px;
 }
 
-h1, h2 {
-  margin-bottom: 1rem;
-}
+
 
 .gallery {
   display: grid;
@@ -136,3 +136,28 @@ footer{
   width: 100%;
   max-width: 100vw;
 }
+@media (max-width: 720px) {
+  nav ul {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: none; 
+    
+  }
+  .img-top{
+    max-width: 200px;
+    max-height: 100px;
+  }
+  .h1{
+    max-width: 200px;
+    max-height: 100px;
+  }
+}
+
+  
+  
+
+
+
+
+
